@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Keynes Le - Creative Direction & Media: journalism, multimedia storytelling, and creative work.">
+  <title>Creative Direction &amp; Media | Keynes Le</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Keynes</a>
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="projects.html">Analytical &amp; Data Projects</a></li>
+        <li><a href="culture.html">Culture &amp; Live Production</a></li>
+        <li><a href="creative.html" class="active">Creative Direction &amp; Media</a></li>
+        <li><a href="coursework.html">Coursework</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1 class="section-title">Creative Direction &amp; Media</h1>
+        <p style="margin-bottom: 3rem; color: var(--text-light); max-width: 680px;">
+          Journalism, multimedia storytelling, and creative work exploring identity, education, and culture. These projects reflect how I think about narrative structure, human subjects, and the craft of making complex ideas land.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="journalism">Journalism</button>
+        </div>
+
+        <!-- Journalism Projects -->
+        <div class="projects-grid">
+
+          <!-- The Unseen Struggle -->
+          <div class="project-card" data-category="journalism" onclick="openModal('unseen-struggle')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/The%20Unseen%20Struggle%20Image.jpg" alt="The Unseen Struggle: Transfer Students">
+            </div>
+            <div class="project-content">
+              <h3>The Unseen Struggle: Transfer Students at Top UCs</h3>
+              <p>Reported a long-form investigative feature combining interviews and data to examine identity, pressure, and systemic challenges faced by transfer students at top UCs.</p>
+              <div class="project-tags">
+                <span class="tag">Long-Form</span>
+                <span class="tag">Data Journalism</span>
+                <span class="tag">Investigative</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- From Doubt to Direction - Multimedia -->
+          <div class="project-card" data-category="journalism" onclick="openModal('multimedia')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/From%20Doubt%20to%20Direction%20Multimedia%20Image.jpg" alt="From Doubt to Direction (Multimedia)">
+            </div>
+            <div class="project-content">
+              <h3>From Doubt to Direction</h3>
+              <p>Produced an integrated multimedia profile using text, audio, photos, and video to tell a human-centered story about mentorship and academic transition.</p>
+              <div class="project-tags">
+                <span class="tag">Multimedia</span>
+                <span class="tag">Video</span>
+                <span class="tag">Audio</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- From Doubt to Direction - Documentary -->
+          <div class="project-card" data-category="journalism" onclick="openModal('documentary')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/From%20Doubt%20to%20Direction%20Interative%20Video%20Image.jpg" alt="From Doubt to Direction: Documentary">
+            </div>
+            <div class="project-content">
+              <h3>From Doubt to Direction: Documentary</h3>
+              <p>Directed and edited a short-form documentary video capturing a counselor's role in guiding students through uncertainty, resilience, and educational mobility.</p>
+              <div class="project-tags">
+                <span class="tag">Documentary</span>
+                <span class="tag">Video Production</span>
+                <span class="tag">Editing</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story & Glory -->
+          <div class="project-card" data-category="journalism" onclick="openModal('story-glory')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Story%20%26%20Glory%20Image.JPG" alt="Story & Glory: Sports Storytelling Platform">
+            </div>
+            <div class="project-content">
+              <h3>Story &amp; Glory: Sports Storytelling Platform</h3>
+              <p>Designed a mobile-first sports media concept blending community-generated content with professional journalism to reimagine trust, engagement, and storytelling.</p>
+              <div class="project-tags">
+                <span class="tag">Product Design</span>
+                <span class="tag">UX</span>
+                <span class="tag">Media Strategy</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Magazine Photoshoot Section -->
+        <div style="margin-top: 5rem;">
+          <h2 class="section-title">Visual Strategy</h2>
+          <p style="margin-bottom: 2.5rem; margin-top: 0.75rem; color: var(--text-light); max-width: 680px;">Self-directed creative work exploring identity and long-term strategy.</p>
+
+          <!-- Vision Is Key Card -->
+          <div class="magazine-card" onclick="openVisionModal()">
+            <div class="magazine-cover">
+              <img src="assets/VISION%20IS%20KEY/Cover%20Image.jpg" alt="Vision Is Key Magazine Cover">
+            </div>
+            <div class="magazine-info">
+              <h3>VISION IS KEY</h3>
+              <p>"VISION IS KEY" is a self-directed creative branding project that explores identity, narrative control, and long-term personal strategy through a magazine-style visual campaign.</p>
+              <div class="project-tags">
+                <span class="tag">Creative Direction</span>
+                <span class="tag">Visual Branding</span>
+                <span class="tag">Identity Design</span>
+              </div>
+              <div class="project-links" style="margin-top: auto;">
+                <span class="project-link">View Gallery &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Vision Is Key Gallery Modal -->
+  <div id="vision-modal" class="modal">
+    <div class="modal-content modal-content--wide">
+      <span class="modal-close" onclick="closeVisionModal()">&times;</span>
+      <h2>VISION IS KEY</h2>
+      <p style="color: var(--text-light); line-height: 1.8; margin-top: 1rem; font-size: 0.95rem;">
+        "VISION IS KEY" stems from the personal evolution of growing into my name, Keynes, and adopting "Key" as both an alias and a principle for direction. The project frames vision not as abstract ambition, but as structured long-term thinking, the same mindset required in business strategy and analytics. Through a magazine-style visual narrative that contrasts formal structure with expressive identity, I explored how perception, positioning, and symbolism shape personal and professional brand. The result is a cohesive creative statement on how clarity of vision functions as a strategic advantage, reinforcing that intentional identity design and disciplined long-term planning unlock opportunity.
+      </p>
+      <div class="vision-toggle">
+        <button class="vision-toggle-btn" id="btn-slideshow" onclick="setVisionView('slideshow')">&#8249;&#8250; Browse</button>
+        <button class="vision-toggle-btn active" id="btn-scroll" onclick="setVisionView('scroll')">&#8596; Scroll</button>
+      </div>
+      <!-- Scroll view -->
+      <div class="vision-scroll-view" id="vision-scroll-view">
+        <div class="vision-scroll-track">
+          <img src="assets/VISION%20IS%20KEY/Picture%201.jpg" alt="Vision Is Key - Picture 1">
+          <img src="assets/VISION%20IS%20KEY/Picture%202.jpg" alt="Vision Is Key - Picture 2">
+          <img src="assets/VISION%20IS%20KEY/Picture%203.jpg" alt="Vision Is Key - Picture 3">
+          <img src="assets/VISION%20IS%20KEY/Picture%204.jpg" alt="Vision Is Key - Picture 4">
+          <img src="assets/VISION%20IS%20KEY/Picture%205.jpg" alt="Vision Is Key - Picture 5">
+          <img src="assets/VISION%20IS%20KEY/Picture%206.jpg" alt="Vision Is Key - Picture 6">
+        </div>
+      </div>
+      <!-- Slideshow view -->
+      <div class="vision-slideshow" id="vision-slideshow">
+        <div class="slideshow-nav-row">
+          <button class="slideshow-btn" onclick="slideshowNav(-1)">&#8592;</button>
+          <div class="slideshow-img-wrap">
+            <img id="slideshow-img" src="assets/VISION%20IS%20KEY/Cover%20Image.jpg" alt="Vision Is Key - Cover">
+          </div>
+          <button class="slideshow-btn" onclick="slideshowNav(1)">&#8594;</button>
+        </div>
+        <span class="slideshow-counter" id="slideshow-counter">1 / 7</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Keynes Le. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:key_2112@berkeley.edu">Email</a>
+        <a href="https://www.linkedin.com/in/keynesle/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const projectData = {
+      'unseen-struggle': {
+        title: 'The Unseen Struggle: Transfer Students at Top UCs',
+        date: 'Jun 2025 – Jul 2025',
+        bullets: [
+          'Reported a long-form feature examining the academic, social, and psychological challenges faced by transfer students at UC Berkeley and UCLA, focusing on imposter syndrome, compressed graduation timelines, and identity formation.',
+          'Conducted original interviews with transfer students, student leaders, and subject-matter experts, combining firsthand perspectives with admissions and graduation data to place individual experience in a broader institutional context.',
+          'Integrated qualitative interviews with public quantitative data to produce a clear, empathetic narrative that highlighted structural challenges while elevating transfer student perspectives often absent from traditional academic success metrics.'
+        ],
+        file: 'assets/projects/PROJECTS/The Unseen Struggle Project.pdf',
+        fileLabel: 'View PDF'
+      },
+      'multimedia': {
+        title: 'From Doubt to Direction',
+        date: 'Jul 2025 – Aug 2025',
+        bullets: [
+          'Reported and produced a non-fiction multimedia story profiling a community college transfer counselor, combining long-form reporting, interviews, and visual storytelling to examine student uncertainty, purpose, and mental health during academic transitions.',
+          'Conducted original interviews with transfer students, student leaders, and subject-matter experts, combining firsthand perspectives with admissions and graduation data to place individual experience in a broader institutional context.',
+          'Integrated qualitative interviews with public quantitative data to produce a clear, empathetic narrative that highlighted structural challenges while elevating transfer student perspectives often absent from traditional academic success metrics.'
+        ],
+        file: 'https://sites.google.com/berkeley.edu/introductiontomultimedia/home',
+        fileLabel: 'View Project',
+        external: true
+      },
+      'documentary': {
+        title: 'From Doubt to Direction: Documentary',
+        date: 'Jul 2025 – Aug 2025',
+        bullets: [
+          'Produced and edited a short-form documentary-style video profile featuring an adjunct transfer counselor at Pasadena City College, exploring the emotional and academic challenges students face when transitioning from community college to four-year universities.',
+          'Conducted an on-camera interview and captured supporting b-roll to tell a non-fiction, character-driven story centered on uncertainty, mentorship, and resilience, emphasizing themes of mental health, self-discovery, and navigating external expectations.',
+          'Managed the full video production process from story development and filming to editing and publishing, creating a polished, audience-focused piece designed to emulate professional digital standards.'
+        ],
+        file: 'https://www.youtube.com/watch?v=ZE507tLmMAc',
+        fileLabel: 'Watch Video',
+        external: true
+      },
+      'story-glory': {
+        title: 'Story & Glory: Sports Storytelling Platform',
+        date: 'Jun 2024 – Jul 2024',
+        bullets: [
+          'Designed and presented a mobile-first sports storytelling platform concept that blends community-generated multimedia content with curated, professional sports journalism, addressing fragmentation and low trust in existing sports media ecosystems.',
+          'Developed a detailed UX and feature mock-up, including dual content feeds (user-driven and professional journalism), personalized news curation, interactive posts, and multimedia storytelling formats optimized for sports fans.',
+          'Created a forward-looking business and editorial vision outlining audience targeting, differentiation from traditional social media, funding strategies, and partnerships, emphasizing high-quality reporting, accessibility, and engagement-driven design.'
+        ],
+        file: 'assets/projects/PROJECTS/Story & Glory.pdf',
+        fileLabel: 'View PDF'
+      }
+    };
+
+    function openModal(projectId) {
+      const project = projectData[projectId];
+      if (!project) return;
+
+      const bulletsList = project.bullets.map(b => `<li>${b}</li>`).join('');
+      const linkTarget = project.external ? ' target="_blank" rel="noopener noreferrer"' : '';
+      const secondLink = project.file2 ? `<a href="${project.file2}" class="modal-link">${project.fileLabel2} &rarr;</a>` : '';
+
+      const modalHTML = `
+        <h2>${project.title}</h2>
+        <p class="modal-date">${project.date}</p>
+        <ul class="modal-bullets">
+          ${bulletsList}
+        </ul>
+        <a href="${project.file}" class="modal-link"${linkTarget}>${project.fileLabel} &rarr;</a>
+        ${secondLink}
+      `;
+
+      document.getElementById('modal-body').innerHTML = modalHTML;
+      document.getElementById('project-modal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('project-modal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('project-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') { closeModal(); closeVisionModal(); }
+    });
+
+    // Vision Is Key Gallery Modal
+    function openVisionModal() {
+      setVisionView('scroll');
+      document.getElementById('vision-modal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeVisionModal() {
+      document.getElementById('vision-modal').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    let slideshowIndex = 0;
+    const slideshowImages = [
+      'assets/VISION%20IS%20KEY/Cover%20Image.jpg',
+      'assets/VISION%20IS%20KEY/Picture%201.jpg',
+      'assets/VISION%20IS%20KEY/Picture%202.jpg',
+      'assets/VISION%20IS%20KEY/Picture%203.jpg',
+      'assets/VISION%20IS%20KEY/Picture%204.jpg',
+      'assets/VISION%20IS%20KEY/Picture%205.jpg',
+      'assets/VISION%20IS%20KEY/Picture%206.jpg'
+    ];
+
+    function slideshowNav(dir) {
+      slideshowIndex = (slideshowIndex + dir + slideshowImages.length) % slideshowImages.length;
+      document.getElementById('slideshow-img').src = slideshowImages[slideshowIndex];
+      document.getElementById('slideshow-img').alt = 'Vision Is Key - Picture ' + (slideshowIndex + 1);
+      document.getElementById('slideshow-counter').textContent = (slideshowIndex + 1) + ' / ' + slideshowImages.length;
+    }
+
+    function setVisionView(mode) {
+      const scrollView = document.getElementById('vision-scroll-view');
+      const slideshowView = document.getElementById('vision-slideshow');
+      const btnScroll = document.getElementById('btn-scroll');
+      const btnSlideshow = document.getElementById('btn-slideshow');
+      if (mode === 'scroll') {
+        scrollView.style.display = 'block';
+        slideshowView.classList.remove('active');
+        btnScroll.classList.add('active');
+        btnSlideshow.classList.remove('active');
+      } else {
+        scrollView.style.display = 'none';
+        slideshowIndex = 0;
+        document.getElementById('slideshow-img').src = slideshowImages[0];
+        document.getElementById('slideshow-img').alt = 'Vision Is Key - Picture 1';
+        document.getElementById('slideshow-counter').textContent = '1 / ' + slideshowImages.length;
+        slideshowView.classList.add('active');
+        btnSlideshow.classList.add('active');
+        btnScroll.classList.remove('active');
+      }
+    }
+
+    document.getElementById('vision-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeVisionModal();
+    });
+  </script>
+</body>
+</html>
