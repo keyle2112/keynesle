@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Keynes Le - Technical projects in machine learning, econometric analysis, and data science.">
+  <title>Analytical &amp; Data Projects | Keynes Le</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Keynes</a>
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="projects.html" class="active">Analytical &amp; Data Projects</a></li>
+        <li><a href="culture.html">Culture &amp; Live Production</a></li>
+        <li><a href="creative.html">Creative Direction &amp; Media</a></li>
+        <li><a href="coursework.html">Coursework</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1 class="section-title">Analytical &amp; Data Projects</h1>
+        <p style="margin-bottom: 3rem; color: var(--text-light); max-width: 680px;">
+          A collection of technical projects spanning machine learning, econometric analysis, and data science.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="data-science">Data Science</button>
+          <button class="filter-btn" data-filter="economics">Economics</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Email Spam Classification System -->
+          <div class="project-card" data-category="data-science" onclick="openModal('email-spam')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Spam%20Email%20Picture.jpg" alt="Email Spam Classification System">
+            </div>
+            <div class="project-content">
+              <h3>Email Spam Classification System</h3>
+              <p>Developed a text-based machine learning classifier achieving 90%+ accuracy while balancing spam detection performance with false-positive risk and ethical considerations.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">NLP</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NBA Salary Determinants -->
+          <div class="project-card" data-category="economics" onclick="openModal('nba-salary')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/NBA%20Salary%20Determinants%20Image.png" alt="NBA Salary Determinants">
+            </div>
+            <div class="project-content">
+              <h3>NBA Salary Determinants</h3>
+              <p>Used econometric regression to analyze how player performance and experience translated into NBA wages, finding scoring and tenure as primary drivers of compensation.</p>
+              <div class="project-tags">
+                <span class="tag">Econometrics</span>
+                <span class="tag">OLS Regression</span>
+                <span class="tag">R</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cook County Housing Price Prediction -->
+          <div class="project-card" data-category="data-science" onclick="openModal('cook-county')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Cook%20County%20Image.jpg" alt="Cook County Housing Price Prediction">
+            </div>
+            <div class="project-content">
+              <h3>Cook County Housing Price Prediction</h3>
+              <p>Built and evaluated a machine learning model on 500k+ housing records to predict property prices and assess fairness impacts across socioeconomic neighborhoods.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">ML</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Climate Change & Civil Conflict -->
+          <div class="project-card" data-category="economics" onclick="openModal('climate-conflict')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Climate%20Change%20%26%20Civil%20Conflict%20Image.jpg" alt="Climate Change & Civil Conflict">
+            </div>
+            <div class="project-content">
+              <h3>Climate Change &amp; Civil Conflict</h3>
+              <p>Constructed panel data models to study how temperature and precipitation shocks influence civil conflict risk across countries and time.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">R</span>
+                <span class="tag">Panel Data</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minimum Wage & FDI -->
+          <div class="project-card" data-category="economics" onclick="openModal('fdi')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Minimum%20Wage%20Policy%20Image.png" alt="Minimum Wage Policy & Foreign Investment">
+            </div>
+            <div class="project-content">
+              <h3>Minimum Wage Policy &amp; Foreign Investment</h3>
+              <p>Applied panel econometrics to assess how minimum wage policy and labor availability affect foreign direct investment in emerging manufacturing economies.</p>
+              <div class="project-tags">
+                <span class="tag">Econometrics</span>
+                <span class="tag">Panel Data</span>
+                <span class="tag">Policy Analysis</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mariel Boatlift -->
+          <div class="project-card" data-category="economics" onclick="openModal('mariel')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Economic%20Impact%20Analysis%20Image.jpg" alt="Economic Impact Analysis: Mariel Boatlift">
+            </div>
+            <div class="project-content">
+              <h3>Economic Impact Analysis: Mariel Boatlift</h3>
+              <p>Replicated Nobel Prize–winning causal research to evaluate the labor market effects of immigration using survey data and econometric analysis.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Causal Analysis</span>
+                <span class="tag">Labor Economics</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regional GDP Analysis -->
+          <div class="project-card" data-category="data-science" onclick="openModal('gdp')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Regional%20GDP%20Analysis%20Image.jpg" alt="Regional GDP Analysis">
+            </div>
+            <div class="project-content">
+              <h3>Regional GDP Analysis</h3>
+              <p>Analyzed and visualized county-level GDP trends to compare regional economic recovery patterns across the United States over two decades.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Geospatial</span>
+                <span class="tag">Time Series</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MLB Salary Disparities -->
+          <div class="project-card" data-category="economics" onclick="openModal('mlb')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Econometrics%20Analysis%20of%20MLB%20Salary%20Disparities%20Image.png" alt="Econometrics Analysis of MLB Salary Disparities">
+            </div>
+            <div class="project-content">
+              <h3>Econometrics Analysis of MLB Salary Disparities</h3>
+              <p>Investigated how race and city demographics influence MLB player salaries beyond performance metrics.</p>
+              <div class="project-tags">
+                <span class="tag">R</span>
+                <span class="tag">Regression</span>
+                <span class="tag">Bias Analysis</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ants Game -->
+          <div class="project-card" data-category="data-science" onclick="openModal('ants')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Ants%20Image.png" alt="Ants: Data-Driven Tower Defense Game">
+            </div>
+            <div class="project-content">
+              <h3>Ants: Data-Driven Tower Defense Game</h3>
+              <p>Tower defense game using object-oriented programming with custom classes, inheritance, and pathfinding algorithms.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Algorithms</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CATS -->
+          <div class="project-card" data-category="data-science" onclick="openModal('cats')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Cats%20Image.jpg" alt="CATS: Typing Autocorrect System" style="object-position: top;">
+            </div>
+            <div class="project-content">
+              <h3>CATS: Typing Autocorrect System</h3>
+              <p>Typing software measuring speed and accuracy with autocorrect using recursive string comparison and dynamic programming.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">Recursion</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- K-NN Classification -->
+          <div class="project-card" data-category="data-science" onclick="openModal('knn')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Classifying%20Movies%20Image.png" alt="Classifying Movies (K-Nearest Neighbors)">
+            </div>
+            <div class="project-content">
+              <h3>Classifying Movies (K-Nearest Neighbors)</h3>
+              <p>K-NN classifier predicting movie genres by analyzing keyword frequency in scripts using Euclidean distances.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">K-NN</span>
+                <span class="tag">Classification</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Climate Change Temps -->
+          <div class="project-card" data-category="data-science" onclick="openModal('climate-temps')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Climate%20Change%20Temperatures%20and%20Precipitation%20Image.jpg" alt="Climate Change: Temperatures and Precipitation">
+            </div>
+            <div class="project-content">
+              <h3>Climate Change: Temperatures and Precipitation</h3>
+              <p>Analyzed temperature and precipitation data from 210 U.S. cities using hypothesis testing and A/B tests.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Statistics</span>
+                <span class="tag">Hypothesis Testing</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Predicting Baseball Wins -->
+          <div class="project-card" data-category="economics" onclick="openModal('baseball')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/Predicting%20Baseball%20Wins%20Image.jpg" alt="Predicting Baseball Wins">
+            </div>
+            <div class="project-content">
+              <h3>Predicting Baseball Wins</h3>
+              <p>Developed regression models predicting MLB team wins based on runs and performance metrics since 2000.</p>
+              <div class="project-tags">
+                <span class="tag">R</span>
+                <span class="tag">Regression</span>
+                <span class="tag">Sports Analytics</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- World Population -->
+          <div class="project-card" data-category="data-science" onclick="openModal('population')">
+            <div class="project-image">
+              <img src="assets/projects/PROJECTS/Project%20Images/World%20Population%20and%20Poverty%20Image.jpg" alt="World Population and Poverty">
+            </div>
+            <div class="project-content">
+              <h3>World Population and Poverty</h3>
+              <p>Examined global population growth and poverty trends, modeling data from 145 countries with visualizations.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Viz</span>
+                <span class="tag">Global Development</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link">View Details &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Keynes Le. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:key_2112@berkeley.edu">Email</a>
+        <a href="https://www.linkedin.com/in/keynesle/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const projectData = {
+      'email-spam': {
+        title: 'Email Spam Classification System',
+        date: 'Nov 2025 – Dec 2025',
+        tags: ['Python', 'Machine Learning', 'NLP'],
+        bullets: [
+          'Developed spam classification model achieving 90%+ accuracy by engineering 34 features from email text using regex pattern matching, word frequency analysis, and text statistics (email length, punctuation counts, capital letters) on 5,000+ training samples.',
+          'Optimized model performance through hyperparameter tuning and cross-validation, iterating 7+ times on test predictions while analyzing precision-recall curves to balance false positive costs (blocking legitimate emails) with spam detection effectiveness.',
+          'Assessed ethical implications of automated content classification by analyzing ROC curves and evaluating real-world misclassification risks across contexts such as hate speech detection and misinformation filtering, demonstrating awareness of AI bias and fairness considerations.'
+        ],
+        file: 'assets/projects/PROJECTS/B1 Email System Classification System/projB1_2025_12_04T07_54_29_533559.zip',
+        fileLabel: 'Download Part 1',
+        file2: 'assets/projects/PROJECTS/B2 Email Spam Classification System/projB2_2025_12_10T02_28_36_589818.zip',
+        fileLabel2: 'Download Part 2'
+      },
+      'nba-salary': {
+        title: 'NBA Salary Determinants',
+        date: 'Sep 2025 – Dec 2025',
+        tags: ['Econometrics', 'OLS Regression', 'R'],
+        bullets: [
+          'Analyzed NBA player salary data for 269 players in the 1994-95 season using OLS regression to evaluate whether on-court productivity accurately translated into wages, applying log transformations to address salary skewness.',
+          'Built simple and multivariate econometric models incorporating performance metrics (points, rebounds, assists, minutes), experience, position, and race to assess wage determinants and test for market inefficiencies.',
+          'Found that scoring and experience were the primary drivers of compensation, while race and position were not statistically significant once performance was controlled for, highlighting both market efficiency and the role of unobserved factors such as leadership or marketability.'
+        ],
+        file: 'assets/projects/PROJECTS/Labor Economics NBA Salary Determinants Project.pdf',
+        fileLabel: 'View PDF'
+      },
+      'cook-county': {
+        title: 'Cook County Housing Price Prediction',
+        date: 'Oct 2025',
+        tags: ['Python', 'Scikit-learn', 'ML'],
+        bullets: [
+          'Built a complete machine learning workflow to predict housing prices from 500k+ records using Python (pandas, scikit-learn), creating custom features through text mining, log transformations, and one-hot encoding that improved model accuracy.',
+          'Evaluated model fairness by analyzing prediction errors across socioeconomic groups, identifying a 15-20% overestimation rate in lower-priced neighborhoods that could lead to regressive tax burden on vulnerable communities.',
+          'Optimized model performance through K-fold cross-validation and comparative analysis of error metrics (RMSE vs. MAPE), demonstrating data-driven decision-making to balance statistical accuracy with real-world equity considerations.'
+        ],
+        file: 'assets/projects/PROJECTS/A1 Cook County Housing Price Prediciton/projA1_2025_10_25T05_58_24_613779.zip',
+        fileLabel: 'Download Part 1',
+        file2: 'assets/projects/PROJECTS/A2 Cook County Housing Price Prediction/projA2_2025_11_02T01_22_50_635036.zip',
+        fileLabel2: 'Download Part 2'
+      },
+      'climate-conflict': {
+        title: 'Climate Change & Civil Conflict',
+        date: 'Apr 2025 – May 2025',
+        tags: ['Python', 'R', 'Panel Data'],
+        bullets: [
+          'Replicated a foundational climate-conflict economics study by integrating large-scale climate, agricultural, and conflict datasets, constructing monthly panel data to examine how temperature and precipitation shocks influence the likelihood of civil conflict.',
+          'Cleaned, merged, and transformed multi-source datasets (climate, crop-weighted exposure, and conflict indicators) using Python and R, applying fixed effects regression models to isolate climate variation while controlling for country- and time-specific factors.',
+          'Interpreted regression results and robustness checks to assess the relationships between climate anomalies and conflict risk, translating complex econometric outputs into clear written insights consistent with published academic findings.'
+        ],
+        file: 'assets/projects/PROJECTS/Econ 148 Climate Change & Civil Conflict.pdf',
+        fileLabel: 'View PDF'
+      },
+      'fdi': {
+        title: 'Minimum Wage Policy & Foreign Investment',
+        date: 'Jan 2025 – May 2025',
+        tags: ['Econometrics', 'Panel Data', 'Policy Analysis'],
+        bullets: [
+          'Conducted a country-year panel data analysis (2009-2019) examining how statutory minimum wages and labor force participation rates affect FDI inflows in Indonesia, Vietnam, and Thailand, using fixed-effects econometric models.',
+          'Integrated and cleaned multi-source datasets from ILOSTAT and the World Bank, controlling for GDP per capita, inflation, and macroeconomic shocks to isolate the role of labor policy and workforce availability in sourcing competitiveness.',
+          'Found that labor availability is a stronger driver of investment than low wages, showing that rising minimum wages do not deter FDI when supported by high labor force participation and institutional stability, yielding policy insights for emerging manufacturing economies.'
+        ],
+        file: 'assets/projects/PROJECTS/Minimum Wage Policy & Foreign Investment.pdf',
+        fileLabel: 'View PDF'
+      },
+      'mariel': {
+        title: 'Economic Impact Analysis: Mariel Boatlift',
+        date: 'Feb 2025 – Mar 2025',
+        tags: ['Python', 'Causal Analysis', 'Labor Economics'],
+        bullets: [
+          'Replicated Prof. David Card\'s Nobel Prize-winning natural experiment methodology using Python to analyze labor market impacts of the 1980 Mariel Boatlift, processing 26,000+ survey records with pandas and performing comparative trend analysis across 5 metropolitan areas over 7 years.',
+          'Conducted multivariate OLS regression analysis to quantify wage determinants across education levels, demographic groups, and geographic markets, engineering 15+ dummy variables and interpreting statistical significance to isolate causal effects from confounding factors.',
+          'Generated data visualizations and pivot tables to identify employment and wage trends by demographic segments, revealing no statistically significant negative impact from 7% labor force expansion, demonstrating proficiency in storytelling with data to communicate complex economic findings.'
+        ],
+        file: 'assets/projects/PROJECTS/Econ 148 Economic Impact Analysis.zip',
+        fileLabel: 'Download Files'
+      },
+      'gdp': {
+        title: 'Regional GDP Analysis',
+        date: 'Feb 2025',
+        tags: ['Python', 'Geospatial', 'Time Series'],
+        bullets: [
+          'Processed 47k+ records of U.S. county GDP data (2001-2021) from the Bureau of Economic Analysis (BEA) using Python (pandas, regex), performing data cleaning, type conversions, and reshaping to convert wide-format datasets into analysis-ready long format with 718k rows.',
+          'Conducted regional economic analysis calculating median GDP growth rates across 8 BEA regions using groupby aggregations and time-series percent change methods, identifying that coastal regions showed stronger recovery post-2008 recession compared to industrial Midwest.',
+          'Developed interactive geospatial dashboards merging economic and geographic data to visualize county-level GDP performance through choropleth maps, revealing concentration of economic growth in tech hubs and urban centers while rural counties experience stagnant or declining GDP.'
+        ],
+        file: 'assets/projects/PROJECTS/Econ 148 Regional GDP Analysis.zip',
+        fileLabel: 'Download Files'
+      },
+      'mlb': {
+        title: 'Econometrics Analysis of MLB Salary Disparities',
+        date: 'Nov 2024 – Dec 2024',
+        tags: ['R', 'Regression', 'Bias Analysis'],
+        bullets: [
+          'Investigated how race and city demographics influence Major League Baseball player salaries beyond performance metrics using regression analysis.',
+          'Highlighted econometric principles like regression analysis and controlling for omitted variable bias, showing performance metrics as the strongest salary predictors and minimal indirect effect from city demographics.',
+          'Applied econometric frameworks to evaluate causality, identifying performance as the primary driver of salaries while addressing limitations in data and omitted variables.'
+        ],
+        file: 'assets/projects/PROJECTS/Econometrics Analysis of MLB Salary Disparities.pdf',
+        fileLabel: 'View PDF'
+      },
+      'ants': {
+        title: 'Ants: Data-Driven Tower Defense Game',
+        date: 'Nov 2024',
+        tags: ['Python', 'OOP', 'Algorithms'],
+        bullets: [
+          'Developed a tower defense game "Ants vs. Some Bees" using Python, integrating object-oriented programming principles to create dynamic gameplay.',
+          'Built and extended functionalities using custom classes, inheritance, and methods to define behaviors and interactions.',
+          'Implemented efficient algorithms for pathfinding, attack mechanisms, and resource management, showcasing Python\'s versatility in solving complex problems.'
+        ],
+        file: 'assets/projects/PROJECTS/Data C88C Ants.zip',
+        fileLabel: 'Download Files'
+      },
+      'cats': {
+        title: 'CATS: Optimizing Typing Autocorrect',
+        date: 'Oct 2024 – Nov 2024',
+        tags: ['Python', 'Algorithms', 'Recursion'],
+        bullets: [
+          'Designed "CATS" (Computer Aided Typing Software) in Python to measure typing speed, accuracy, and provide auto correction for common typographical errors.',
+          'Applied advanced Python concepts such as recursive string comparison, dynamic programming for autocorrect functions, and real-time multiplayer synchronization.',
+          'Developed customizable typing tests and optimized algorithms for calculating word accuracy, speed metrics (WPM), and progress tracking during multiplayer games.'
+        ],
+        file: 'assets/projects/PROJECTS/Data C88C Cats.zip',
+        fileLabel: 'Download Files'
+      },
+      'knn': {
+        title: 'Classifying Movies (K-Nearest Neighbors)',
+        date: 'Apr 2024',
+        tags: ['Python', 'K-NN', 'Classification'],
+        bullets: [
+          'Created a k-nearest neighbors classifier designed to predict a movie\'s genre by analyzing the frequency of keywords and associations in movie scripts.',
+          'Developed and tested training data sets, extending the classifier to use multiple features and computed Euclidean distances for accurate classification.',
+          'Investigated word associations in a movie script dataset, crafting a custom feature set to enhance the performance of the machine learning model.'
+        ],
+        file: 'assets/projects/PROJECTS/Data 8 Project 3 Classification.zip',
+        fileLabel: 'Download Files'
+      },
+      'climate-temps': {
+        title: 'Climate Change: Temperatures and Precipitation',
+        date: 'Mar 2024 – Apr 2024',
+        tags: ['Python', 'Statistics', 'Hypothesis Testing'],
+        bullets: [
+          'Analyzed historical temperature and precipitation data from 210 U.S. cities to investigate long-term climate trends.',
+          'Utilized statistical techniques, such as hypothesis testing and confidence intervals, to measure and assess changes in temperatures and warming trends over time.',
+          'Conducted an A/B test on annual precipitation data to evaluate the impact of drought periods as defined by the U.S. Environmental Protection Agency (EPA).'
+        ],
+        file: 'assets/projects/PROJECTS/Data 8 Project 2 Climate Change Temperatures and Precipitation.zip',
+        fileLabel: 'Download Files'
+      },
+      'baseball': {
+        title: 'Predicting Baseball Wins: Method of Least Squares',
+        date: 'Mar 2024 – Apr 2024',
+        tags: ['R', 'Regression', 'Sports Analytics'],
+        bullets: [
+          'Developed three regression models, including simple and multiple regressions, to predict MLB team wins based on runs and other performance metrics.',
+          'Analyzed and plotted data from all MLB teams since 2000 to examine the relationship between runs scored, runs allowed, and team wins.',
+          'Applied log transformations and additional variables to increase model accuracy, achieving higher r-squared values.'
+        ],
+        file: 'assets/projects/PROJECTS/Predicting Baseball Wins Project.pdf',
+        fileLabel: 'View PDF'
+      },
+      'population': {
+        title: 'World Population and Poverty',
+        date: 'Feb 2024',
+        tags: ['Python', 'Data Viz', 'Global Development'],
+        bullets: [
+          'Examined global population growth and factors influencing them, with a detailed case study on Poland\'s demographic changes since 1900.',
+          'Visualized statistical methods (line plots, scatterplots, and histograms) to examine life expectancy, fertility rates, child mortality, and their impact on population dynamics.',
+          'Evaluated global poverty trends, modeling data from 145 countries to understand the influence of colonialism, healthcare, economics, and social inequality on poverty rates.'
+        ],
+        file: 'assets/projects/PROJECTS/Data 8 Project 1 World Population and Poverty.zip',
+        fileLabel: 'Download Files'
+      }
+    };
+
+    function openModal(projectId) {
+      const project = projectData[projectId];
+      if (!project) return;
+
+      const bulletsList = project.bullets.map(b => `<li>${b}</li>`).join('');
+      const linkTarget = project.external ? ' target="_blank" rel="noopener noreferrer"' : '';
+      const secondLink = project.file2 ? `<a href="${project.file2}" class="modal-link">${project.fileLabel2} &rarr;</a>` : '';
+      const tagsHTML = project.tags ? `<div class="project-tags" style="margin: 1.25rem 0 1.5rem;">${project.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>` : '';
+
+      const modalHTML = `
+        <h2>${project.title}</h2>
+        <p class="modal-date">${project.date}</p>
+        <ul class="modal-bullets">
+          ${bulletsList}
+        </ul>
+        ${tagsHTML}
+        <a href="${project.file}" class="modal-link"${linkTarget}>${project.fileLabel} &rarr;</a>
+        ${secondLink}
+      `;
+
+      document.getElementById('modal-body').innerHTML = modalHTML;
+      document.getElementById('project-modal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('project-modal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('project-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
