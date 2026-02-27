@@ -296,7 +296,7 @@
 
     // Vision Is Key Gallery Modal
     function openVisionModal() {
-      setVisionView('scroll');
+      setVisionView(window.innerWidth <= 768 ? 'slideshow' : 'scroll');
       document.getElementById('vision-modal').style.display = 'flex';
       document.body.style.overflow = 'hidden';
     }

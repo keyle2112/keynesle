@@ -896,7 +896,11 @@ section {
   }
   .magazine-cover {
     width: 100%;
-    height: 300px;
+    height: auto;
+  }
+  .magazine-cover img {
+    height: auto;
+    object-fit: contain;
   }
   .slideshow-img-wrap img {
     height: 300px;
