@@ -523,6 +523,9 @@ section {
   color: var(--text-light);
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .modal-bullets {
@@ -964,6 +967,9 @@ section {
   letter-spacing: 0.05em;
   margin-bottom: 0.6rem;
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .culture-card h3 {
