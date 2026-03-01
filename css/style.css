@@ -512,7 +512,9 @@ section {
   letter-spacing: 0.5px;
 }
 
-#modal-body h2 {
+#modal-body h2,
+#culture-modal-body h2,
+.modal-content--wide h2 {
   font-size: 1.75rem;
   color: var(--text-color);
   margin-bottom: 0.5rem;
@@ -572,7 +574,9 @@ section {
     margin: 1rem auto;
   }
 
-  #modal-body h2 {
+  #modal-body h2,
+  #culture-modal-body h2,
+  .modal-content--wide h2 {
     font-size: 1.35rem;
   }
 
