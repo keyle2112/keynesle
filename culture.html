@@ -192,30 +192,35 @@
       },
       'djing': {
         title: 'DJ Key',
+        date: 'September 2024 – Present',
         role: 'DJ &nbsp;&middot;&nbsp; Los Angeles &amp; Bay Area',
         paragraph: 'Reading a room is a form of analysis that involves interpreting shifts in energy, audience response, and setting, and translating that awareness into musical decisions that move people. Performing under the alias DJ Key, what began as a creative outlet in late 2024 quickly evolved into a disciplined craft and side venture, resulting in over 20 live performances across Los Angeles and the Bay Area. Each set, spanning hip-hop, throwback pop, EDM, reggaeton, and more, sharpened my intuition for pacing, transitions, and crowd dynamics. DJing has strengthened the same mindset I bring to analytics: start with context, recognize patterns, and deliver the right experience at the right moment.',
         tags: ['Music Curation', 'Live Performance', 'Audience Engagement']
       },
       'golden-records': {
         title: 'Golden Records',
+        date: 'September 2025 – December 2025',
         role: 'Events Coordinator &nbsp;&middot;&nbsp; Berkeley, CA',
         paragraph: 'As Events Coordinator for Golden Records, UC Berkeley\'s premier student music collective, I helped design and execute live music experiences that drew over 1,000 students across concerts, electronic nights, and open mics. I collaborated across marketing, production, and technical teams to translate creative visions into operational realities, overseeing sound, lighting, scheduling, and outreach with precision. Beyond logistics, I studied attendance patterns and engagement signals to refine artist lineups and promotional strategy, treating each event as both a cultural moment and a feedback loop. DJing some shows myself, I experienced the audience from the stage as well as behind the scenes, deepening my understanding of how identity, energy, and data converge to build sustainable creative communities.',
         tags: ['Music Industry', 'Artist Development', 'Content Strategy']
       },
       'ape': {
         title: 'Another Planet Entertainment',
+        date: 'February 2025 – May 2025',
         role: 'Consumer Research &amp; Marketing Analyst &nbsp;&middot;&nbsp; Berkeley, CA',
         paragraph: 'In a 12-person consulting team, I led research efforts to understand how UC Berkeley students discover, evaluate, and attend live music events. I helped design and analyze 575+ survey responses and 30 focus group interviews, studying variables such as class year, genre preference, ticket price sensitivity, academic major, and residency status to identify patterns in concert attendance behavior. Based on these insights, I contributed to competitor analysis, partnership activation ideas, and a proposed student ambassador program aimed at increasing on-campus awareness and turnout. Our team delivered a 51-page strategic playbook with data-backed recommendations that informed Another Planet Entertainment\'s student-focused marketing strategy for the Greek Theatre\'s 2025 lineup.',
         tags: ['Live Events', 'Concert Promotion', 'Fan Experience']
       },
       'tiktok': {
         title: 'TikTok',
+        date: 'February 2025 – May 2025',
         role: 'Data &amp; Strategic Partnerships Consultant &nbsp;&middot;&nbsp; Berkeley, CA',
         paragraph: 'Within a 12-week consulting engagement in the BCEC General Membership sector, I worked on a team of 11 to evaluate how TikTok could strengthen engagement in music and sports verticals by focusing on long-term brand affinity rather than short-term conversion. I helped design and analyze 455+ survey responses and 22 focus group participants, examining psychographics, fandom intensity, content behaviors, and pain points across six distinct personas ranging from super-fans to non-fans. Using Deepnote to build data visualizations and conduct SWOT and competitor analysis, I assessed potential streaming and brand partnerships based on audience fit, strategic alignment, and measurable KPIs. Our final deliverable synthesized research findings, prototype campaign ideas, and partnership recommendations into a strategic deck presented to stakeholders, demonstrating how structured data analysis can guide creative ecosystem growth.',
         tags: ['Content Strategy', 'Audience Growth', 'Digital Media']
       },
       'grammy-u': {
         title: 'Grammy U',
+        date: 'February 2025 – Present',
         role: 'Member, Mentorship Mentee &amp; SF Chapter Consultant &nbsp;&middot;&nbsp; SF Chapter',
         paragraph: 'As a GRAMMY U member and mentorship program mentee under the Recording Academy, I gained direct exposure to the operational side of the music industry through soundchecks, networking events, and conversations with working professionals, observing how careers are built across creative and business functions. In parallel, I served as a contract consultant for the San Francisco Chapter, where I executed a multi-channel campus growth campaign targeting UC Berkeley students. I built a database of 50+ potential partnerships and led on-campus activations that expanded outreach to over 5,000 students, focusing not just on recruitment but sustained engagement and retention. The experience sharpened my understanding of how institutional networks, targeted segmentation, and structured outreach strategies contribute to long-term community growth within established industry ecosystems.',
         tags: ['Music Business', 'Industry Network', 'Professional Development']
@@ -228,6 +233,7 @@
       const tagsHTML = exp.tags.map(t => `<span class="tag">${t}</span>`).join('');
       document.getElementById('culture-modal-body').innerHTML = `
         <h2>${exp.title}</h2>
+        ${exp.date ? `<p class="modal-date">${exp.date}</p>` : ''}
         <p class="modal-date">${exp.role}</p>
         <p style="color: var(--text-light); line-height: 1.8; margin: 1.25rem 0;">${exp.paragraph}</p>
         <div class="project-tags" style="margin-top: 1.5rem;">${tagsHTML}</div>
