@@ -7,7 +7,7 @@ B.A. Economics, Minors in Data Science & Journalism
 
 ## Live Site
 
-Visit: [keynesle.com](keynesle.com)
+Visit: [https://keynesle.com](https://keynesle.com)
 
 ## Pages
 
