@@ -232,8 +232,8 @@
       const exp = cultureData[key];
       if (!exp) return;
       const tagsHTML = exp.tags.map(t => `<span class="tag">${t}</span>`).join('');
-      const fileLink = exp.file ? `<a href="${exp.file}" class="modal-link">${exp.fileLabel} &rarr;</a>` : '';
-      const file2Link = exp.file2 ? `<a href="${exp.file2}" class="modal-link">${exp.fileLabel2} &rarr;</a>` : '';
+      const fileLink = exp.file ? `<a href="${exp.file}" class="modal-link" target="_blank" rel="noopener noreferrer">${exp.fileLabel} &rarr;</a>` : '';
+      const file2Link = exp.file2 ? `<a href="${exp.file2}" class="modal-link" target="_blank" rel="noopener noreferrer">${exp.fileLabel2} &rarr;</a>` : '';
       document.getElementById('culture-modal-body').innerHTML = `
         <h2>${exp.title}</h2>
         <p class="modal-date">${exp.role}</p>

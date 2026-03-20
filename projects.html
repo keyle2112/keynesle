@@ -516,8 +516,9 @@
       if (!project) return;
 
       const bulletsList = project.bullets.map(b => `<li>${b}</li>`).join('');
-      const linkTarget = project.external ? ' target="_blank" rel="noopener noreferrer"' : '';
-      const secondLink = project.file2 ? `<a href="${project.file2}" class="modal-link">${project.fileLabel2} &rarr;</a>` : '';
+      const linkTarget = (project.external || !project.file.endsWith('.zip')) ? ' target="_blank" rel="noopener noreferrer"' : '';
+      const secondLinkTarget = project.file2 && !project.file2.endsWith('.zip') ? ' target="_blank" rel="noopener noreferrer"' : '';
+      const secondLink = project.file2 ? `<a href="${project.file2}" class="modal-link"${secondLinkTarget}>${project.fileLabel2} &rarr;</a>` : '';
       const tagsHTML = project.tags ? `<div class="project-tags" style="margin: 1.25rem 0 1.5rem;">${project.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>` : '';
 
       const modalHTML = `

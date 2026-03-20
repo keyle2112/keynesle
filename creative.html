@@ -264,8 +264,9 @@
       if (!project) return;
 
       const bulletsList = project.bullets.map(b => `<li>${b}</li>`).join('');
-      const linkTarget = project.external ? ' target="_blank" rel="noopener noreferrer"' : '';
-      const secondLink = project.file2 ? `<a href="${project.file2}" class="modal-link">${project.fileLabel2} &rarr;</a>` : '';
+      const linkTarget = (project.external || !project.file.endsWith('.zip')) ? ' target="_blank" rel="noopener noreferrer"' : '';
+      const secondLinkTarget = project.file2 && !project.file2.endsWith('.zip') ? ' target="_blank" rel="noopener noreferrer"' : '';
+      const secondLink = project.file2 ? `<a href="${project.file2}" class="modal-link"${secondLinkTarget}>${project.fileLabel2} &rarr;</a>` : '';
 
       const modalHTML = `
         <h2>${project.title}</h2>
