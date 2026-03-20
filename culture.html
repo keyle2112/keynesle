@@ -206,13 +206,19 @@
         title: 'Another Planet Entertainment',
         role: 'Consumer Research &amp; Data Analyst &nbsp;&middot;&nbsp; Berkeley, CA &nbsp;&middot;&nbsp; February 2025 – May 2025',
         paragraph: 'In a 12-person consulting team, I led research efforts to understand how UC Berkeley students discover, evaluate, and attend live music events. I helped design and analyze 575+ survey responses and 30 focus group interviews, studying variables such as class year, genre preference, ticket price sensitivity, academic major, and residency status to identify patterns in concert attendance behavior. Based on these insights, I contributed to competitor analysis, partnership activation ideas, and a proposed student ambassador program aimed at increasing on-campus awareness and turnout. Our team delivered a 51-page strategic playbook with data-backed recommendations that informed Another Planet Entertainment\'s student-focused marketing strategy for the Greek Theatre\'s 2025 lineup.',
-        tags: ['Live Events', 'Concert Promotion', 'Fan Experience']
+        tags: ['Live Events', 'Concert Promotion', 'Fan Experience'],
+        file: 'assets/slide%20decks/Another%20Planet%20Entertainment%20Midterm%20Deliverable.pdf',
+        fileLabel: 'Midterm Deliverable',
+        file2: 'assets/slide%20decks/Another%20Planet%20Entertainment%20Final%20Deliverable.pdf',
+        fileLabel2: 'Final Deliverable'
       },
       'tiktok': {
         title: 'TikTok',
         role: 'Data &amp; Strategic Partnerships Consultant &nbsp;&middot;&nbsp; Berkeley, CA &nbsp;&middot;&nbsp; February 2025 – May 2025',
         paragraph: 'Within a 12-week consulting engagement in the BCEC General Membership sector, I worked on a team of 11 to evaluate how TikTok could strengthen engagement in music and sports verticals by focusing on long-term brand affinity rather than short-term conversion. I helped design and analyze 455+ survey responses and 22 focus group participants, examining psychographics, fandom intensity, content behaviors, and pain points across six distinct personas ranging from super-fans to non-fans. Using Deepnote to build data visualizations and conduct SWOT and competitor analysis, I assessed potential streaming and brand partnerships based on audience fit, strategic alignment, and measurable KPIs. Our final deliverable synthesized research findings, prototype campaign ideas, and partnership recommendations into a strategic deck presented to stakeholders, demonstrating how structured data analysis can guide creative ecosystem growth.',
-        tags: ['Content Strategy', 'Audience Growth', 'Digital Media']
+        tags: ['Content Strategy', 'Audience Growth', 'Digital Media'],
+        file: 'assets/slide%20decks/Tik%20Tok%20Final%20Deliverable.pdf',
+        fileLabel: 'Final Deliverable'
       },
       'grammy-u': {
         title: 'Grammy U',
@@ -226,11 +232,14 @@
       const exp = cultureData[key];
       if (!exp) return;
       const tagsHTML = exp.tags.map(t => `<span class="tag">${t}</span>`).join('');
+      const fileLink = exp.file ? `<a href="${exp.file}" class="modal-link">${exp.fileLabel} &rarr;</a>` : '';
+      const file2Link = exp.file2 ? `<a href="${exp.file2}" class="modal-link">${exp.fileLabel2} &rarr;</a>` : '';
       document.getElementById('culture-modal-body').innerHTML = `
         <h2>${exp.title}</h2>
         <p class="modal-date">${exp.role}</p>
         <p style="color: var(--text-light); line-height: 1.8; margin: 1.25rem 0;">${exp.paragraph}</p>
         <div class="project-tags" style="margin-top: 1.5rem;">${tagsHTML}</div>
+        ${fileLink || file2Link ? `<div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem;">${fileLink}${file2Link}</div>` : ''}
       `;
       document.getElementById('culture-modal').style.display = 'flex';
       document.body.style.overflow = 'hidden';
