@@ -1,22 +1,11 @@
-# Keynes | Portfolio
+# Keynes | Portfolio Website 
 
-Personal portfolio website showcasing my work in economics, data science, and journalism.
+[This repository contains the source code for my personal portfolio website.](https://keynesle.com)
 
-**UC Berkeley | Class of 2025**
-B.A. Economics, Minors in Data Science & Journalism
+The site showcases my work across analytics, live production, and creative media, and serves as a central hub for my professional background and projects.
 
-## Live Site
+## Purpose 
 
-Visit: [https://keynesle.com](https://keynesle.com)
+This repository is focused on the design and structure of my website.
 
-## Pages
-
-- **About** - Professional background and bio
-- **Projects** - Technical and analytical work
-- **Coursework** - Academic background
-- **Creative Work** - Journalism and multimedia projects
-
-## Contact
-
-- Email: key_2112@berkeley.edu
-- LinkedIn: [linkedin.com/in/keynesle](https://www.linkedin.com/in/keynesle/)
+For my data and analytics projects, please visit my Data Analyst Portfolio repository:
