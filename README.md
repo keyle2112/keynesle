@@ -1,4 +1,4 @@
-# Keynes | Portfolio Website 
+# keynesle.com
 
 [This repository contains the source code for my personal portfolio website.](https://keynesle.com)
 
